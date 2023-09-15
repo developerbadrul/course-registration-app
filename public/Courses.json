@@ -1,0 +1,61 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "img": "./assets/Rectangle 2-1.png",
+        "title": "Introduction to Web Development",
+        "description": "Learn the basics of web development and create your first website.",
+        "price": 49.99,
+        "course_duration_hours": 80
+      },
+      {
+        "id": 2,
+        "img": "./assets/Rectangle 2-2.png",
+        "title": "Data Science Fundamentals",
+        "description": "Explore the world of data science and analyze real-world data sets.",
+        "price": 59.99,
+        "course_duration_hours": 120
+      },
+      {
+        "id": 3,
+        "img": "./assets/Rectangle 2-3.png",
+        "title": "Mobile App Development with React Native",
+        "description": "Build cross-platform mobile apps using React Native framework.",
+        "price": 39.99,
+        "course_duration_hours": 72
+      },
+      {
+        "id": 4,
+        "img": "./assets/Rectangle 2-4.png",
+        "title": "Machine Learning for Beginners",
+        "description": "Get started with machine learning and predictive modeling.",
+        "price": 69.99,
+        "course_duration_hours": 100
+      },
+      {
+        "id": 5,
+        "img": "./assets/Rectangle 2-5.png",
+        "title": "Digital Marketing Mastery",
+        "description": "Learn the ins and outs of digital marketing strategies.",
+        "price": 49.99,
+        "course_duration_hours": 120
+      },
+      {
+        "id": 6,
+        "img": "./assets/Rectangle 2-6.png",
+        "title": "Python Programming for Beginners",
+        "description": "Start your journey into programming with Python.",
+        "price": 29.99,
+        "course_duration_hours": 64
+      },
+      {
+        "id": 7,
+        "img": "./assets/Rectangle 2.png",
+        "title": "Artificial Intelligence and Deep Learning",
+        "description": "Dive into the world of AI and deep learning algorithms.",
+        "price": 79.99,
+        "course_duration_hours": 192
+      }
+    ]
+  }
+  
