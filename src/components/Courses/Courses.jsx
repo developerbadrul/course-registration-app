@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Course from "../../Course/Course";
 
-const Courses = ({handleSelectItem}) => {
+const Courses = ({handleSelectItem, handleCredit, handlePrice}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
@@ -14,11 +14,13 @@ const Courses = ({handleSelectItem}) => {
     // console.log(courses);
     
     return (
-        <div className="my-5 grid grid-cols-3 gap-4">
+        <div className="my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
                 courses.courses?.map(course => <Course key={course.id}
                 course={course}
                 handleSelectItem={handleSelectItem}
+                handleCredit={handleCredit}
+                handlePrice={handlePrice}
                 ></Course>)
             }
         </div>
