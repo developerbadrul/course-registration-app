@@ -55,6 +55,22 @@
         "description": "Dive into the world of AI and deep learning algorithms.",
         "price": 79.99,
         "course_duration_hours": 192
+      },
+      {
+        "id": 8,
+        "img": "./assets/Rectangle 2-1.png",
+        "title": "Introduction to Web Development",
+        "description": "Learn the basics of web development and create your first website.",
+        "price": 49.99,
+        "course_duration_hours": 80
+      },
+      {
+        "id": 9,
+        "img": "./assets/Rectangle 2-2.png",
+        "title": "Data Science Fundamentals",
+        "description": "Explore the world of data science and analyze real-world data sets.",
+        "price": 59.99,
+        "course_duration_hours": 120
       }
     ]
   }

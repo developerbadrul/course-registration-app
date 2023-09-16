@@ -7,6 +7,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [credit, setCredit] = useState(0);
   const [price, setPrice] = useState(0);
+  const [hours, setHours] = useState(2000)
 
   const handleSelectItem = (course) => {
     // setCart([...cart], course)
@@ -20,7 +21,15 @@ function App() {
   }
 
   const handleCredit = newCredit => {
-    setCredit(credit + newCredit);
+    const totalCreditHour = credit + newCredit
+    setCredit(totalCreditHour);
+
+    if(hours <= 0){
+    alert('not enough Hour')
+    }else{
+      setHours(hours - totalCreditHour)
+    }
+
   }
 
   const handlePrice = getPrice => {
@@ -36,7 +45,7 @@ function App() {
           handleCredit={handleCredit}
           handlePrice={handlePrice}>
         </Courses>
-        <Cart key={cart.id} cart={cart} credit={credit} price={price}></Cart>
+        <Cart key={cart.id} cart={cart} credit={credit} price={price} hours={hours}> </Cart>
       </div>
 
       <div>

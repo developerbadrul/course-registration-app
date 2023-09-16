@@ -8,7 +8,7 @@ const Cart = (props) => {
         <div>
             <div className="card bg-base-100 w-80 mx-auto shadow-xl">
                 <div className="card-body">
-                    <h2 className="card-title text-[#2F80ED] font-semibold">Credit Hour Remaining 7 hr</h2>
+                    <h2 className="card-title text-[#2F80ED] font-semibold text-center">Credit Hour Remaining <br /> {props.hours} hr</h2>
                     <hr />
                     <h2 className="text-2xl font-bold">Course Name</h2>
                     <ul className="list-disc">
@@ -20,7 +20,7 @@ const Cart = (props) => {
                     <hr />
                     <p>Total Credit Hour : {props.credit}</p>
                     <hr />
-                    <p>Total Price : {props.price} USD</p>
+                    <p>Total Price : {props.price.toFixed(2)} USD</p>
                 </div>
             </div>
         </div>
