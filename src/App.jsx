@@ -53,7 +53,7 @@ function App() {
         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
           <div className="modal-box">
             <h3 className="font-bold text-lg text-red-600">Already Exists</h3>
-            <img className='container w-1/2 mx-auto' src="../public/assets/duplicate.png" />
+            <img className='container w-1/2 mx-auto' src="https://i.ibb.co/pvXnvvY/duplicate.png"/>
             <p className="py-4 text-sky-500 font-bold text-center text-2xl">Please Add Another Item</p>
             <div className="modal-action">
               <form method="dialog">
