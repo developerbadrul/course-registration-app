@@ -12,7 +12,7 @@ function App() {
     // setCart([...cart], course)
     const isExit = cart.find(x => x.id === course.id);
     if (isExit) {
-      return alert("Already exit")
+      document.getElementById('my_modal_5').showModal()
     } else {
       setCart([...cart, course])
     }
@@ -37,6 +37,23 @@ function App() {
           handlePrice={handlePrice}>
         </Courses>
         <Cart key={cart.id} cart={cart} credit={credit} price={price}></Cart>
+      </div>
+
+      <div>
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg text-red-600">Already Exists</h3>
+            <img className='container w-1/2 mx-auto' src="../public/assets/duplicate.png" />
+            <p className="py-4 text-sky-500 font-bold text-center text-2xl">Please Add Another Item</p>
+            <div className="modal-action">
+              <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </>
   )
